@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="651.0" style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="copper.controllers.dialogs.AgreementController">
+   <children>
+      <JFXButton fx:id="agreeBtn" layoutX="489.0" layoutY="440.0" onAction="#iAgree" style="-fx-background-color: #459c48;" text="I Agree" textFill="WHITE" />
+      <JFXButton fx:id="cancelBtn" layoutX="568.0" layoutY="440.0" onAction="#cancel" style="-fx-background-color: #e11a0c;" text="Cancel" textFill="WHITE" />
+      <ScrollPane layoutX="38.0" layoutY="85.0" pannable="true" prefHeight="282.0" prefWidth="582.0" style="-fx-background-color: #353535;">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <content>
+            <VBox prefWidth="550.0" style="-fx-background-color: #353535;">
+               <children>
+                  <Label fx:id="messageLabel" style="-fx-background-color: #353535;" text="Label" textFill="#b9b9b9" wrapText="true">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </VBox>
+         </content></ScrollPane>
+      <Label fx:id="headerTitle" layoutX="38.0" layoutY="31.0" prefHeight="30.0" prefWidth="238.0" text="Developer Agreement " textFill="#656565">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="383.0" prefHeight="21.0" prefWidth="489.0" text="If you accept the terms of this agreement, Click I Agree to Continue." textFill="#656565" />
+      <Separator layoutX="38.0" layoutY="419.0" prefHeight="6.0" prefWidth="582.0" style="-fx-background-color: none;" />
+   </children>
+</Pane>

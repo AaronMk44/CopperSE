@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="191.0" prefWidth="415.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="copper.controllers.dialogs.BoxController">
+   <children>
+      <ImageView fitHeight="70.0" fitWidth="68.0" layoutX="31.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/images/successIcon.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="msgLabel" layoutX="127.0" layoutY="51.0" text="Message" wrapText="true">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="closeWindow" layoutX="175.0" layoutY="135.0" onAction="#closeWindow" prefHeight="31.0" prefWidth="65.0" style="-fx-background-color: #eee;" text="Okay">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

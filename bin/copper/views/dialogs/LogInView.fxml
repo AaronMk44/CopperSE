@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="484.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="copper.controllers.dialogs.LogInController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="142.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/images/logInBanner.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="emailField" focusColor="#bc6f33" labelFloat="true" layoutX="73.0" layoutY="152.0" prefHeight="37.0" prefWidth="338.0" promptText="Enter Email" unFocusColor="#bc6f33">
+         <font>
+            <Font name="Segoe UI" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="paaswordField" focusColor="#bc6f33" labelFloat="true" layoutX="73.0" layoutY="241.0" prefHeight="37.0" prefWidth="338.0" promptText="Enter Password" unFocusColor="#bc6f33">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="logInBtn" layoutX="206.0" layoutY="312.0" onAction="#verifyCredentials" style="-fx-background-color: #bc6f33;" text="Log In" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lackAccLable" layoutX="180.0" layoutY="376.0" onMouseClicked="#loadLackAcc" text="Don't have an account?" />
+      <ImageView fx:id="settingsImg" fitHeight="112.0" fitWidth="36.0" layoutX="411.0" layoutY="396.0" onMouseClicked="#loadSettings" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/images/settingsIcon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</Pane>

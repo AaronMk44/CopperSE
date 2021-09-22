@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="copper.controllers.dashboard.DashboardController">
+   <children>
+      <HBox prefHeight="71.0" prefWidth="615.0" spacing="20.0" style="-fx-background-color: white;">
+         <children>
+            <Label text="Dashboard">
+               <font>
+                  <Font name="Segoe UI" size="29.0" />
+               </font>
+            </Label>
+            <Region prefHeight="51.0" prefWidth="207.0" />
+            <ImageView fx:id="inboxImg" fitHeight="35.0" fitWidth="102.0" onMouseClicked="#openInbox" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/images/inbox.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <JFXButton fx:id="logOutBtn" onAction="#logOut" prefHeight="35.0" prefWidth="92.0" style="-fx-background-color: #bc6f33;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets left="20.0" top="20.0" />
+         </padding>
+         <effect>
+            <DropShadow color="#b2b2b2" height="23.97" radius="5.4925" width="0.0" />
+         </effect>
+      </HBox>
+      <VBox fx:id="browserCont" alignment="CENTER" layoutX="77.0" layoutY="104.0" onMouseClicked="#loadBrowser" prefHeight="200.0" prefWidth="188.0" spacing="20.0" style="-fx-background-color: white;" styleClass="container">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/images/browserIcon.png" />
+               </image>
+            </ImageView>
+            <Label text="Browser">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </VBox>
+      <VBox fx:id="manageAccCont" alignment="CENTER" layoutX="347.0" layoutY="104.0" onMouseClicked="#loadManageAccount" prefHeight="200.0" prefWidth="188.0" spacing="10.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/images/userIcon.png" />
+               </image>
+            </ImageView>
+            <Label text="Manage Account">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></VBox>
+      <VBox fx:id="helpCont" alignment="CENTER" layoutX="77.0" layoutY="373.0" onMouseClicked="#loadHelp" prefHeight="200.0" prefWidth="188.0" spacing="10.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/images/helpIcon.png" />
+               </image>
+            </ImageView>
+            <Label text="Help">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></VBox>
+      <VBox fx:id="settingsCont" alignment="CENTER" layoutX="347.0" layoutY="373.0" onMouseClicked="#loadSettings" prefHeight="200.0" prefWidth="188.0" spacing="10.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/images/settingsIcon.png" />
+               </image>
+            </ImageView>
+            <Label text="Setttings">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></VBox>
+      <Label layoutX="24.0" layoutY="615.0" text="Curernt User:" />
+      <Label fx:id="usernameLabel" layoutX="106.0" layoutY="615.0" />
+   </children>
+</Pane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="199.0" prefWidth="512.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="copper.controllers.account.CurrentPwdController">
+   <children>
+      <JFXPasswordField fx:id="currentPwdField" focusColor="#bc6f33" labelFloat="true" layoutX="84.0" layoutY="57.0" prefHeight="40.0" prefWidth="345.0" promptText="Enter Current Password" unFocusColor="#bc6f33">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="verifyBtn" layoutX="224.0" layoutY="132.0" onAction="#verifyPwd" prefHeight="31.0" prefWidth="65.0" style="-fx-background-color: #bc6f33;" text="Verify" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

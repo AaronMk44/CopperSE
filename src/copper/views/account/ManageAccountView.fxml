@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="copper.controllers.account.ManageAccountController">
+   <children>
+      <HBox prefHeight="71.0" prefWidth="625.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow color="#b2b2b2" height="11.99" radius="2.4975" width="0.0" />
+         </effect>
+         <children>
+            <Label text="Manage Account">
+               <font>
+                  <Font name="Segoe UI" size="29.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="20.0" top="20.0" />
+         </padding>
+      </HBox>
+      <Label layoutX="43.0" layoutY="117.0" text="First Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="firstName" layoutX="43.0" layoutY="152.0" text="var" />
+      <Label layoutX="152.0" layoutY="117.0" text="Last Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lastName" layoutX="152.0" layoutY="152.0" text="var" />
+      <Label layoutX="43.0" layoutY="269.0" text="Email">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="email" layoutX="43.0" layoutY="304.0" text="var" />
+      <Label layoutX="43.0" layoutY="345.0" text="User Group">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="userGroup" layoutX="43.0" layoutY="380.0" text="var" />
+      <HBox alignment="CENTER" layoutY="509.0" prefHeight="80.0" prefWidth="612.0" spacing="100.0" style="-fx-background-color: white;">
+         <children>
+            <JFXButton fx:id="changePwdBtn" onAction="#changePwd" prefHeight="31.0" prefWidth="144.0" style="-fx-background-color: #bc6f33;" text="Change Password" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="updateDetailsBtn" onAction="#updateDetails" prefHeight="31.0" prefWidth="124.0" style="-fx-background-color: #bc6f33;" text="Update Details " textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow color="#b2b2b2" height="11.99" radius="2.7475" width="1.0" />
+         </effect>
+      </HBox>
+      <ImageView fitHeight="106.0" fitWidth="79.0" layoutX="417.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/images/userIcon.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="378.0" layoutY="270.0" prefHeight="202.0" prefWidth="157.0" spacing="10.0" style="-fx-background-color: white; -fx-background-radius: 5px;">
+         <children>
+            <ImageView fx:id="developerImg" fitHeight="127.0" fitWidth="123.0" onMouseClicked="#becomeDeveloper" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/images/developer.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label fx:id="becomeDevLabel" text="Become a Developer">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow color="#bcb8b8" />
+         </effect>
+      </VBox>
+      <Label layoutX="43.0" layoutY="200.0" text="Gender">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="gender" layoutX="43.0" layoutY="235.0" text="var" />
+   </children>
+</Pane>

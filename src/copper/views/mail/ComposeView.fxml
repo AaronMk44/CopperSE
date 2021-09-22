@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="copper.controllers.mail.ComposeController">
+   <children>
+      <JFXTextField fx:id="to" focusColor="#bc6f33" labelFloat="true" layoutX="32.0" layoutY="33.0" prefHeight="25.0" prefWidth="242.0" promptText="To" unFocusColor="#bc6f33" />
+      <JFXTextField fx:id="title" focusColor="#bc6f33" labelFloat="true" layoutX="32.0" layoutY="80.0" prefHeight="25.0" prefWidth="434.0" promptText="Enter Title" unFocusColor="#bc6f33" />
+      <JFXTextArea fx:id="body" focusColor="#bc6f33" labelFloat="true" layoutX="32.0" layoutY="134.0" prefHeight="214.0" prefWidth="434.0" promptText="Type your message" unFocusColor="#bc6f33" />
+      <JFXButton fx:id="send" layoutX="229.0" layoutY="382.0" onAction="#sendMail" prefHeight="31.0" style="-fx-background-color: #bc6f33;" text="Send" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></JFXButton>
+   </children>
+</Pane>

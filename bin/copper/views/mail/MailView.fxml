@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="copper.controllers.mail.MailController">
+   <bottom>
+      <HBox prefHeight="44.0" prefWidth="600.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="composeBtn" onAction="#composeMail" style="-fx-background-color: #eee;" text="Compose" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" top="20.0" />
+         </padding>
+         <effect>
+            <DropShadow color="#aba9a9" />
+         </effect>
+      </HBox>
+   </bottom>
+   <top>
+      <VBox prefWidth="100.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="53.0" prefWidth="600.0" spacing="5.0">
+               <children>
+                  <Label text="Copper Mail  | ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="currentView" layoutX="30.0" layoutY="30.0" text="Broadcast">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" top="20.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="45.0" prefWidth="308.0" spacing="20.0" style="-fx-background-color: white; -fx-border-color: #eee; -fx-border-radius: 10;">
+                     <children>
+                        <JFXButton fx:id="broadcastBtn" onAction="#loadBroadcastMail" style="-fx-background-color: #eee;" text="Broadcast" />
+                        <JFXButton fx:id="inboxBtn" layoutX="10.0" layoutY="10.0" onAction="#loadInboxMail" style="-fx-background-color: #eee;" text="Inbox" />
+                        <JFXButton fx:id="sentBtn" layoutX="62.0" layoutY="10.0" onAction="#loadSentMail" style="-fx-background-color: #eee;" text="Sent" />
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </HBox>
+         </children>
+         <effect>
+            <DropShadow color="#979797" />
+         </effect>
+      </VBox>
+   </top>
+   <center>
+      <ScrollPane fx:id="scrollContent" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+        </content>
+      </ScrollPane>
+   </center>
+</BorderPane>
