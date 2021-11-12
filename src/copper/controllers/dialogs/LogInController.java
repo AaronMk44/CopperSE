@@ -75,7 +75,7 @@ public class LogInController
                     UserModel model = new UserModel();
                     Configurations.setUser(model.getUser(emailField.getText()));
                     
-                    Platform.runLater(() -> { // required to interact with javafx ui
+                    Platform.runLater(() -> { // Required to interact with JavaFX UI
                         try 
                         {
                             window.close();
@@ -89,7 +89,7 @@ public class LogInController
                     
                 } else
                 {
-                    Platform.runLater(() -> { //reqired to interact with javafx ui
+                    Platform.runLater(() -> { // Required to interact with JavaFX UI
                         try 
                         {
                             ProgressView.close();

@@ -22,8 +22,6 @@ public class LogInModel
 
     public boolean checkUser(final String EMAIL, final String PASSWORD)
     {
-    	System.out.println(SecurityUtils.hashText(PASSWORD));
-
         RemoteDatabase db = new RemoteDatabase();
         Connection conn = db.getConnection();
 

@@ -44,7 +44,7 @@ public class DashboardView
 
         scene = new Scene(root, 600, 646);
 
-        window.setTitle("Copper - Dashboard");
+        window.setTitle("Copper Standard Edition - Dashboard");
         window.setScene(scene);
         window.setResizable(false);
         

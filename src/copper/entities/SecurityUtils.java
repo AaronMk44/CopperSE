@@ -29,7 +29,7 @@ public class SecurityUtils
     {
         String password = "";
         String temp = SecurityUtils.hashText(key);
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 17; i++)
             password += temp.charAt(i);
 
         return password;

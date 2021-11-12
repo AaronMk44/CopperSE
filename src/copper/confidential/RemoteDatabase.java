@@ -15,8 +15,8 @@ public class RemoteDatabase
 
     final private String DATABASE_NAME = "copper";
     private String SEVER_ADDRESS;
-    final private String username = "root";
-    final private String password = "";
+    final private String username = "copper_user";
+    final private String password = "user@copper";
 
     private String errorMsg;
 

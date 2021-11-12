@@ -42,7 +42,7 @@ public class LogInView
 
         Scene scene = new Scene(root);
 
-        window.setTitle("Copper - Log In");
+        window.setTitle("Copper Standard Edition - Log In");
         window.setScene(scene);
         window.setResizable(false);
         window.initModality(Modality.APPLICATION_MODAL);

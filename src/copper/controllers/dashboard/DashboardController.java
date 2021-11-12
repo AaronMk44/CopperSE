@@ -53,7 +53,7 @@ public class DashboardController
         Configurations.authorise();
     	Runtime runTime = Runtime.getRuntime();
 		try {
-			Process process = runTime.exec("H:\\Projects\\Copper\\Adapters\\BrowserAdapter.exe");
+			Process process = runTime.exec("Adapters\\BrowserAdapter.exe");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}        

@@ -29,7 +29,6 @@ public class Configurations
 
     public static void intit()
     {
-        System.out.println("asdnfsajdn");
         File configFile = new File(configFileName);
         try
         {

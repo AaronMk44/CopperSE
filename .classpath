@@ -2,16 +2,9 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_111"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="H:/Projects/libs/gluegen-rt.jar"/>
-	<classpathentry kind="lib" path="H:/Projects/libs/gluegen-rt-natives-windows-amd64.jar"/>
 	<classpathentry kind="lib" path="H:/Projects/libs/jBCrypt-0.4.1.jar"/>
-	<classpathentry kind="lib" path="H:/Projects/libs/jcef.jar"/>
-	<classpathentry kind="lib" path="H:/Projects/libs/jcef-tests.jar"/>
 	<classpathentry kind="lib" path="H:/Projects/libs/jfoenix-8.0.10.jar"/>
-	<classpathentry kind="lib" path="H:/Projects/libs/jogl-all.jar"/>
-	<classpathentry kind="lib" path="H:/Projects/libs/jogl-all-natives-windows-amd64.jar"/>
 	<classpathentry kind="lib" path="H:/Projects/libs/json-simple-1.1.1.jar"/>
 	<classpathentry kind="lib" path="H:/Projects/libs/mysql-connector-java-5.1.49-bin.jar"/>
-	<classpathentry kind="lib" path="H:/Projects/libs/sqlite-jdbc-3.27.2.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
